@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .font-cursive { font-family: cursive; }
 .font-mono {    font-family: monospace; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .serif-ns        { font-family: georgia, serif; }
   .sans-serif-ns   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-ns { font-family: fantasy; }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .font-mono-ns    { font-family: monospace; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .serif-m        { font-family: georgia, serif; }
   .sans-serif-m   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-m { font-family: fantasy; }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .font-mono-m    { font-family: monospace; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .serif-l        { font-family: georgia, serif; }
   .sans-serif-l   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-l { font-family: fantasy; }
