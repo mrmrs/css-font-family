@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-font-family)
 ## File Size
 
 1.2K font-family.css
-1.0K font-family.min.css
+1.0K font-family.min.css 
+241B minified and gzipped
 
 ## The Code
 ```
