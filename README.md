@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-font-family)
 ## File Size
 
 1.2K font-family.css
-1.0K font-family.min.css 
+1.0K font-family.min.css
 241B minified and gzipped
 
 ## The Code
@@ -66,7 +66,7 @@ View on [npm](https://www.npmjs.org/package/css-font-family)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
