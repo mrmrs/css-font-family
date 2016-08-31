@@ -1,7 +1,7 @@
 {
   "name": "css-font-family",
   "style": "font-family.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-font-family",
   "description": "Css module of single purpose classes for font family",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-font-family.css > css/css-font-family.css && tachyons src/css-font-family.css --minify > css/css-font-family.min.css && tachyons src/css-font-family.css --generate-docs --package=../../package.json > readme.md"
