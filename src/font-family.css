@@ -8,7 +8,7 @@
 .font-cursive { font-family: cursive; }
 .font-mono {    font-family: monospace; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .serif-s        { font-family: georgia, serif; }
   .sans-serif-s   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-s { font-family: fantasy; }
@@ -16,7 +16,7 @@
   .font-mono-s    { font-family: monospace; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .serif-m        { font-family: georgia, serif; }
   .sans-serif-m   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-m { font-family: fantasy; }
@@ -24,7 +24,7 @@
   .font-mono-m    { font-family: monospace; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .serif-l        { font-family: georgia, serif; }
   .sans-serif-l   { font-family: avenir, 'avenir next', helvetica, arial, sans-serif; }
   .font-fantasy-l { font-family: fantasy; }
