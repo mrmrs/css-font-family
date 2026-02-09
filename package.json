@@ -1,38 +1,44 @@
 {
   "name": "css-font-family",
-  "style": "font-family.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-font-family",
-  "description": "Css module of single purpose classes for font family",
+  "version": "2.0.0",
+  "description": "Functional CSS for font-family",
+  "style": "dist/font-family.css",
+  "main": "dist/font-family.css",
+  "exports": {
+    ".": "./dist/font-family.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "font-family"
+    "font-family",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-font-family": {
+  "homepage": "https://github.com/mrmrs/css-font-family",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-font-family.git"
+    "url": "https://github.com/mrmrs/css-font-family.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-font-family/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-font-family/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
