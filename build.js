@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-font-family.css');
+const srcFile = path.join(__dirname, 'src', 'font-family.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-font-family.css',
+  filename: 'font-family.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-font-family.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'font-family.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-font-family.css',
+  filename: 'font-family.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-font-family.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'font-family.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-font-family.css     ${unminified.length} bytes`);
-console.log(`  dist/css-font-family.min.css ${minified.length} bytes`);
+console.log(`  dist/font-family.css     ${unminified.length} bytes`);
+console.log(`  dist/font-family.min.css ${minified.length} bytes`);
